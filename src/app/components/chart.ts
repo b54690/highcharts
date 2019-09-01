@@ -44,7 +44,7 @@ export class ChartComponent {
         chart.series[0].data = ChartComponent.lastTenDays().map((date) => {
             return {date, value: Math.floor((Math.random() * 1000) + 1)};
         });
-        this.chartOptions = chart;
-        return this.chartOptions;
+
+        return this.chartOptions = chart;
     }
 }
